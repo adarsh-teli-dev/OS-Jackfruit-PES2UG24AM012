@@ -165,13 +165,12 @@ sudo dmesg | tail -3
 
 ### Screenshot 1 — Multi-container supervision
 Two containers (alpha running cpu_hog, beta running io_pulse) started under one supervisor process. Supervisor terminal shows both `started container` messages with distinct PIDs.
-<img width="799" height="163" alt="Screenshot 1" src="C:\Users\ADARSH TELI\OneDrive\Desktop\os_jackfruit\OS-Jackfruit-PES2UG24AM012\screenshots_os\Screenshot1.jpeg" />
+<img width="799" height="163" alt="Screenshot1" src="screenshots_os/Screenshot 1.jpeg" />
 
 
 ### Screenshot 2 — Metadata tracking
 Output of `engine ps` showing both containers with their PID, state, start time, soft limit, and hard limit columns populated correctly.
-<img width="802" height="142" alt="Screenshot2" src="C:\Users\ADARSH TELI\OneDrive\Desktop\os_jackfruit\OS-Jackfruit-PES2UG24AM012\screenshots_os\Screenshot2.jpeg" />
-
+<img width="799" height="163" alt="Screenshot1" src="screenshots_os/Screenshot%201.jpeg" />
 
 ### Screenshot 3 — Bounded-buffer logging
 `engine logs alpha` and `engine logs beta` showing full output captured from both containers through the producer→buffer→consumer pipeline. Log files `logs/alpha.log` and `logs/beta.log` visible in `ls -la logs/`.
